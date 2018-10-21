@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sentwiment</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    width: 100%;
+    height: 10%;
+    background-color: #666;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    text-shadow:
+		-3px -3px 0 #000,
+		3px -3px 0 #000,
+		-3px 3px 0 #000,
+		3px 3px 0 #000;
+    color: white;
+      background-image: url("https://us.123rf.com/450wm/belchonoksun/belchonoksun1511/belchonoksun151100030/48094760-stock-vector-math-education-vector-seamless-pattern-with-figures-handwritten-formulas-tasks-plots-and-calculation.jpg?ver=6")
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    height: 500px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 500px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    width: 100%;
+    height: 33%;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>SENTWIMENT</h1>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><button class="button">SENTWIMENT</button></li>
+      <li><button class="button">about us</button></li>
+      <li><button class="button">documentation</button></li>
+      <li><button class="button">HSHacksIV</button></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1>What is Sentwimnet?</h1>
+    <p> Sentwiment is an open source natural language processing tool for Twitter. The project uses machine learning modules to process various tweets for a certain topic to analyze Twitters sentiments toward it whether it be positve, negative and nuetralness. The model uses a method called indexing to determine its polarity and subjectivity. Polarity tells us what the opinion on the topic is (positive, negative, nuetral). Subjectivity tells us how much of an opinion the tweet is.</p>
+  </article>
+</section>
+
+<footer>
+  <p>© 2018 [Akul Vohra | Anwar Mujeeb | Will Channing]</p>
+</footer>
+
+</body>
+</html>
